@@ -9,9 +9,9 @@ const analysisRoutes = require('./routes/analysisRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 
 const corsOptions = {
-  origin: ["http://localhost:3000"], // allow your frontend
+  origin: ["http://localhost:3000", "https://excel-frontend-eight.vercel.app/"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  credentials: true, // if you're using cookies or auth headers
+  credentials: true,
 };
 
 const app = express();
