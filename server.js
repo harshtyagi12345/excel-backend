@@ -8,9 +8,14 @@ const uploadRoutes = require('./routes/uploadRoutes');
 const analysisRoutes = require('./routes/analysisRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 
+const corsOptions = {
+  origin: ["http://localhost:3000"], // allow your frontend
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true, // if you're using cookies or auth headers
+};
 
 const app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Connect to DB
