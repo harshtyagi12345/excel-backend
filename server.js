@@ -9,7 +9,7 @@ const analysisRoutes = require('./routes/analysisRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://excel-frontend-eight.vercel.app/"],
+  origin: ["http://localhost:3000", "https://excel-frontend-eight.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 };
